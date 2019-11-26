@@ -1,0 +1,3 @@
+CMD
+COPY  copy files from local to image
+ADD   can copy files from URL to image, can decompress file from tar and put decompressed file to image
