@@ -12,4 +12,5 @@ HEALTHCHECK  perform test to check if container runs fine
       
       
 ===================================
-docker build -t demo:v1    # build image with  name demo and tag v1   
+docker build -t demo:v1      # build image with  name demo and tag v1   
+docker tag IMAGEID demo:v1   # tag image IMAGEID wirh demo name and tag v1
