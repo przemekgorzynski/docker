@@ -15,3 +15,4 @@ HEALTHCHECK  perform test to check if container runs fine
 docker build -t demo:v1      # build image with  name demo and tag v1   
 docker tag IMAGEID demo:v1   # tag image IMAGEID wirh demo name and tag v1
 docker container commit CONTAINERID newname    #when files modified within running container we can create new image with all modifications
+docker container commit --change='CMD ["ash"]' CONTAINER_NAME   # change CMD in container eg. from sh to ash - create new container
