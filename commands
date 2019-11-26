@@ -3,3 +3,5 @@ RUN   run commands (mkdir, cp, rm etc.)
 COPY  copy files from local to image
 ADD   can copy files from URL to image, can decompress file from tar and put decompressed file to image
 EXPOSE  passing information on which port service within container is listening (in docker run command output PORTS column)
+HEALTHCHECK  perform test to check if container runs fine
+      # HEALTHCHECK --interval=5s CMS ping -c 1 172.17.0.2
