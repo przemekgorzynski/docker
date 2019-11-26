@@ -1,5 +1,6 @@
-CMD   default container command - commands that starts when image runs - always PID 1 - can be overwritten by command passed from CLI 
-ENTRYPOINT  default container commands - cannot be overwritten
+CMD   default container command - commands that starts when image runs - always PID 1 - can be overwritten by command passed from CLI
+ENTRYPOINT  default container commands - cannot be overwritten from CLI
+     # ENTRYPOINT ["/bin/ping"]
 RUN   run commands (mkdir, cp, rm etc.)
 COPY  copy files from local to image
 ADD   can copy files from URL to image, can decompress file from tar and put decompressed file to image
