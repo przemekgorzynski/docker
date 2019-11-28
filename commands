@@ -30,3 +30,7 @@ docker push localhost:5000/imagename    # pushing imagename image to local repo 
 docker pull localhost:5000/imagename 
 
 ==========================================
+
+docker tag 035c6a0cef18  przemekgorzynski/demo:v1  #always before pushing we have to tag image
+docker push przemekgorzynski/demo:v1   #pushing image to docker hub - will create repo named demo
+docker pull przemekgorzynski/demo:v1   #pulling specific image
