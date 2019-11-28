@@ -21,3 +21,5 @@ docker container commit --change='CMD ["ash"]' CONTAINER_NAME   # change CMD in 
 
 docker inspect
 docker logs
+docker export IMAGENAME > name.tar   # ezport image to tar file
+cat name.tar | docker import -NAME:latest      #import docke rimage from tar file
