@@ -23,3 +23,8 @@ docker inspect
 docker logs
 docker export IMAGENAME > name.tar   # ezport image to tar file
 cat name.tar | docker import -NAME:latest      #import docke rimage from tar file
+
+==========================================
+docker registry image  # image to store images on localhost - service for storing repo
+docker push localhost:5000/imagename    # pushing imagename image to local repo (registry)
+docker pull localhost:5000/imagename 
