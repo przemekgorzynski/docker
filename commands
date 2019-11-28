@@ -24,13 +24,17 @@ docker logs
 docker export IMAGENAME > name.tar   # ezport image to tar file
 cat name.tar | docker import -NAME:latest      #import docke rimage from tar file
 
-==========================================
+================ PUSHING / PULLING ==========================
+LOCAL
 docker registry image # docker pull registry # image to store images on localhost - service for storing repo
 docker push localhost:5000/imagename    # pushing imagename image to local repo (registry)
 docker pull localhost:5000/imagename 
 
-==========================================
-
+DOCKER HUB
+docker login  # login first to docker hub
 docker tag 035c6a0cef18  przemekgorzynski/demo:v1  #always before pushing we have to tag image
 docker push przemekgorzynski/demo:v1   #pushing image to docker hub - will create repo named demo
 docker pull przemekgorzynski/demo:v1   #pulling specific image
+docker logout
+
+==========================================
